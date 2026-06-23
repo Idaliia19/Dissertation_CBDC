@@ -1,0 +1,7 @@
+data/raw/
+*.zip
+*.csv
+!data/processed/cbdc_events.csv
+!data/processed/bank_tickers.csv
+__pycache__/
+.DS_Store
