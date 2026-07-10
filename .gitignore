@@ -1,0 +1,7 @@
+data/
+.pgpass
+config.yaml
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
