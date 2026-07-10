@@ -1,9 +1,0 @@
-# Python dependencies for the CBDC-vulnerability dissertation data collection.
-# All sources are free and need no API keys.
-pandas>=2.0
-numpy>=1.24
-requests>=2.30
-yfinance>=0.2.40
-beautifulsoup4>=4.12
-lxml>=4.9
-pdfplumber>=0.11   # extract the Fed "Money and Payments" discussion paper (PDF)
