@@ -1,7 +1,39 @@
+# ---------------------------------------------------------------------------
+# Data — exclude the whole folder (raw inputs AND processed outputs)
+# ---------------------------------------------------------------------------
 data/
+
+# Safety net: never track data file types anywhere in the repo
+*.csv
+*.parquet
+*.xlsx
+*.xls
+*.zip
+
+# Generated outputs living under data/ (redundant with data/, kept explicit)
+data/**/*.png
+data/**/*.txt
+
+# ---------------------------------------------------------------------------
+# Secrets / local config
+# ---------------------------------------------------------------------------
 .pgpass
 config.yaml
+
+# ---------------------------------------------------------------------------
+# System / editor junk
+# ---------------------------------------------------------------------------
+.DS_Store
 __pycache__/
 *.pyc
+.ipynb_checkpoints/
+.vscode/
+.idea/
 .venv/
-.DS_Store
+
+# ---------------------------------------------------------------------------
+# Explicitly KEEP tracked (code + project docs):
+#   scripts/*.py, README.md, requirements.txt, .gitignore
+# None of the patterns above match these. *.txt is scoped to data/ only,
+# so requirements.txt stays tracked.
+# ---------------------------------------------------------------------------
